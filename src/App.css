@@ -1,0 +1,23 @@
+.container{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(142, 142, 203);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(16, 1, 1);
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 10px;
+
+}
+#root
+{
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
