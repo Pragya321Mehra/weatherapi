@@ -6,26 +6,43 @@
     console.log(data);
     
 if(data){return (<>
+<div className="container1">
+    <div className='searchbar'>
+        <img src="https://cdn-icons-png.flaticon.com/512/3534/3534501.png" alt="" />
        <input type="text" placeholder="Search.." id="location"></input>
          <button onClick={()=>{
               let city=document.getElementById('location').value;
               change(city);
             
-         }}>Search</button>
+         }}><img src='https://static-00.iconduck.com/assets.00/search-icon-2048x2048-cmujl7en.png' ></img></button>
+    </div>
+    
+  <h1>   {data.location.name}, {data.location.region}</h1>  
 
-  <h1>{data.location.name}</h1>  
-  
+    <h1>{data.location.country}</h1>
+    <div className="temp">
+    <img src={data.current.condition.icon} alt="weather"></img>
+    <h3>{data.current.temp_c}°C</h3>
+    </div>
+    <h4>Wind Speed: {data.current.wind_kph} km/h</h4>
+    <h4>Humidity: {data.current.humidity}%</h4>
+    
+    <h4>Feels Like: {data.current.feelslike_c}°C</h4>
+
+  </div>
 
 </>)}
 else{
     return (<>
+    <div className="container1">
        <input type="text" placeholder="Search.." id="location"></input>
          <button onClick={()=>{
               let city=document.getElementById('location').value;
               change(city);
             
          }}>Search</button>
-  <h1>Delhi</h1>
+  <h1>NO LOCATION FOUND</h1>
+  </div>
   </>)
 }
 }
