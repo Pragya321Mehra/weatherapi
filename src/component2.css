@@ -1,13 +1,23 @@
 .container2
 {
     color: white;
-    padding: 10px;
-    margin: 10px;
+    margin-left: 10px;
     border-radius: 5px;
     display: flex;
     background-color: transparent;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
     flex-direction: column;
     width: 65vw;
-    height: 95vh;
+    height: 70vh;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.text
+{
+    display: flex;
+    
+    width: 40%;
+    height: 100%;
+    flex-direction: column;
 }

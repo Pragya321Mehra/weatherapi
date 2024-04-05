@@ -22,7 +22,7 @@ useEffect(() => {
   if(data)
   {api.search
     .getPhotos({ 
-      query: data.current.condition.text + " weather",
+      query: data.current.condition.text + " weather" +data.location.name,
     
       orientation: "landscape"
     })

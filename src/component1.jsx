@@ -3,7 +3,7 @@
  import React from 'react';
  import './component1.css'
  export default function C1( {data, change}){
-    console.log(data);
+  
     
 if(data){return (<>
 <div className="container1">
@@ -24,11 +24,7 @@ if(data){return (<>
     <img src={data.current.condition.icon} alt="weather"></img>
     <h3>{data.current.temp_c}°C</h3>
     </div>
-    <h4>Wind Speed: {data.current.wind_kph} km/h</h4>
-    <h4>Humidity: {data.current.humidity}%</h4>
     
-    <h4>Feels Like: {data.current.feelslike_c}°C</h4>
-
   </div>
 
 </>)}
